@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.108.0">
+    <title>Carousel Template · Bootstrap v5.3</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+
+<link href="/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      .sa:hover{
+        color: yellow;
+      }
+      ::-webkit-scrollbar {
+        width: 10px;
+        
+      }
+
+/* Track */
+      ::-webkit-scrollbar-track {
+      background: #f1f1f1; 
+      }
+
+/* Handle */
+      ::-webkit-scrollbar-thumb {
+          background: #888; 
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+          background: #555; 
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body class="bg-info" style="background: linear-gradient(to right, rgb(255, 228, 230), rgb(204, 251, 241));">
+    
+    <nav class="navbar  navbar-dark fixed-top bg-dark navbar-expand-lg text-white ">
+      <div class="container scale nav">
+        <div style="height: 70px;">
+          <a href="#" class="navbar-brand d-flex mt-2 ">iz<h1><div class="d-flex">
+              <p style="color: aqua;">c</p><p style="color: yellow;">o</p><p style="color: red;">l</p><p style="color: greenyellow;">o</p><p style="color: orange;">r</p>
+               </div></h1><p class="d-flex justify-content-center align-items-center">art</p>
+          </a>
+      </div>
+        <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link  pe-3 sa">Anasayfa</a>
+              </li>
+              <li class="nav-item">
+                <a href="hakkımızda.html" class="nav-link pe-3 text-white">Hakkımızda</a>
+              </li>
+              <li class="nav-item">
+                <a href="hizmetlerimiz.html" class="nav-link pe-3 sa">Hizmetlerimiz</a>
+              </li>
+              <li class="nav-item">
+                <a href="yaptıklarımız.html" class="nav-link pe-3 sa">Yaptıklarımız</a>
+              </li>
+              <li class="nav-item">
+                <a href="iletişim.html" class="nav-link pe-3 sa">İletişim</a>
+              </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+    <main>
+        <div class="row mt-4 ">
+                <div class="col-md-12 text-center mt-5 mb-3">
+                    <h1 class="text-decoration-underline fst-italic">Hakkımızda</h1></div>
+                <div class="col-md-1 col-sm-2"></div>
+                <div class="col-md-10 col-sm-8 bg-dark border rounded-4">
+                    <div class="text-warning ms-5 p-3 fs-4 ordered fst-italic font-monospace">
+                        İşletmemiz dünden bugüne dürüstlük ilkesini benimseyerek, dengeli ve sağlıklı bir biçimde gelişen şirketimiz, müşterilerinin gösterdikleri yakın ilgi ve itimat sayesinde bu günkü onur verici konumuna ulaşmıştır.
+
+                         Yılında kurumsal hale gelip sahip olduğu profesyonel yapısı ve kalite anlayışıyla İtalyan boya ve dekorasyon hizmeti vermektedir.
+                       
+                       Dekorasyon aynı zamanda görselleştirme ve geliştirmeye önem vererek sizlere daima en güncel trendleri ve modern alternatifleri sunmaktadır.
+                       
+                       Amacımız hem boya işlerinde, hem de dekorasyon işlerinde en yüksek düzeyde müşteri memnuniyeti sağlamaktır.
+                       
+                       İzcolorart  kurulduğu günden bu zamana kadar aldığı tüm projeleri kaliteli hizmeti ile verilen termin sürelerine uyarak %300 müşteri memnuniyeti ile teslim etmiştir. </div>
+                </div>
+                <div class="col-md-1 col-sm-2"></div>            
+        </div>
+    </main>
+
+
+    <script src="/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      ScrollReveal().reveal('.right',{ duration: 2000 ,distance:"60px",origin:"right"});
+      ScrollReveal().reveal('.left',{ duration: 2000 ,distance:"60px",origin:"left"});
+      ScrollReveal().reveal('.nav',{ duration: 2000 ,distance:"-20px",origin: "bottom", desktop: false ,reset: false});
+    </script>
+  </body>
+</html>
