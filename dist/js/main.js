@@ -1,5 +1,5 @@
 mediumZoom('.zoom',{
-    margin: 55,
+    margin: 50,
     scrollOffset: 200,
     background: '#fff',
 });
