@@ -9,6 +9,14 @@
     <title>Carousel Template · Bootstrap v5.3</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@600;700&display=swap" rel="stylesheet">
+
 
     
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -70,6 +78,12 @@
       .sa:hover{
         color: yellow;
       }
+      .font{
+        font-family: 'Sofia Sans', sans-serif;
+      }
+      .title-font{
+        font-family: 'Teko', sans-serif;
+      }
       ::-webkit-scrollbar {
         width: 10px;
         
@@ -98,7 +112,7 @@
   <body class="bg-info" style="background: linear-gradient(to right, rgb(255, 228, 230), rgb(204, 251, 241));">
     
     <nav class="navbar  navbar-dark fixed-top bg-dark navbar-expand-lg text-white ">
-      <div class="container scale nav">
+      <div class="container scale nav ps-5">
         <div style="height: 70px;">
           <a href="#" class="navbar-brand d-flex mt-2 ">iz<h1><div class="d-flex">
               <p style="color: aqua;">c</p><p style="color: yellow;">o</p><p style="color: red;">l</p><p style="color: greenyellow;">o</p><p style="color: orange;">r</p>
@@ -108,7 +122,7 @@
         <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse font" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a href="index.html" class="nav-link  pe-3 sa">Anasayfa</a>
@@ -130,14 +144,16 @@
     </div>
     </nav>
 
-    <main>
-        <div class="row mt-4 ">
-                <div class="col-md-12 text-center mt-5 mb-3">
-                    <h1 class="text-decoration-underline fst-italic">Hakkımızda</h1></div>
+
+    <main class="">
+        <div class="row mt-5 pt-1 p-0 m-0">
+                <div class="col-md-12 text-center mt-4 mb-3">
+                    <h1 class="text-decoration-underline title-font">Hakkımızda</h1></div>
                 <div class="col-md-1 col-sm-2"></div>
-                <div class="col-md-10 col-sm-8 bg-dark border rounded-4">
-                    <div class="text-warning ms-5 p-3 fs-4 ordered fst-italic font-monospace">
-                        İşletmemiz dünden bugüne dürüstlük ilkesini benimseyerek, dengeli ve sağlıklı bir biçimde gelişen şirketimiz, müşterilerinin gösterdikleri yakın ilgi ve itimat sayesinde bu günkü onur verici konumuna ulaşmıştır.
+                <div class="col-md-10 col-sm-8 shadow p-3 mb-5 rounded border rounded-4">
+                    <div class="text-dark ms-2 p-2 fs-4 ordered fst-italic font ">
+                        <h3>
+                          İşletmemiz dünden bugüne dürüstlük ilkesini benimseyerek, dengeli ve sağlıklı bir biçimde gelişen şirketimiz, müşterilerinin gösterdikleri yakın ilgi ve itimat sayesinde bu günkü onur verici konumuna ulaşmıştır.
 
                          Yılında kurumsal hale gelip sahip olduğu profesyonel yapısı ve kalite anlayışıyla İtalyan boya ve dekorasyon hizmeti vermektedir.
                        
@@ -145,7 +161,9 @@
                        
                        Amacımız hem boya işlerinde, hem de dekorasyon işlerinde en yüksek düzeyde müşteri memnuniyeti sağlamaktır.
                        
-                       İzcolorart  kurulduğu günden bu zamana kadar aldığı tüm projeleri kaliteli hizmeti ile verilen termin sürelerine uyarak %300 müşteri memnuniyeti ile teslim etmiştir. </div>
+                       İzcolorart  kurulduğu günden bu zamana kadar aldığı tüm projeleri kaliteli hizmeti ile verilen termin sürelerine uyarak %300 müşteri memnuniyeti ile teslim etmiştir.
+                        </h3>
+                   </div>
                 </div>
                 <div class="col-md-1 col-sm-2"></div>            
         </div>

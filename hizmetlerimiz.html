@@ -10,6 +10,9 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
     
 
     
@@ -71,9 +74,10 @@
         color: yellow;
       }
       .arka-plan{
-
         background:linear-gradient(to right, rgb(255, 228, 230), rgb(204, 251, 241));
-
+      }
+      .font{
+        font-family: 'Sofia Sans', sans-serif;
       }
     </style>
 
@@ -83,21 +87,24 @@
   </head>
   <body class="arka-plan"  >
     
-    <nav class="navbar navbar-dark fixed-top bg-dark navbar-expand-lg text-white " >
-      <div class="container ">
-        <div style="height:70px;">
-            <a href="#" class="navbar-brand d-flex mt-2">iz<h1><div class="d-flex">
-                <p style="color: aqua;">c</p><p style="color: yellow;">o</p><p style="color: red;">l</p><p style="color: greenyellow;">o</p><p style="color: orange;">r</p>
-                 </div></h1><p class="d-flex justify-content-center align-items-center">art</p>
-            </a>
-        </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar  navbar-dark fixed-top bg-dark navbar-expand-lg text-white ">
+      <div class="container scale nav ps-5">
+        <div style="height: 70px;">
+          <a href="#" class="navbar-brand d-flex mt-2 ">iz<h1><div class="d-flex">
+              <p style="color: aqua;">c</p><p style="color: yellow;">o</p><p style="color: red;">l</p><p style="color: greenyellow;">o</p><p style="color: orange;">r</p>
+               </div></h1><p class="d-flex justify-content-center align-items-center">art</p>
+          </a>
+      </div>
+        <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse font" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a href="index.html" class="nav-link pe-3 sa">Anasayfa</a>
+                <a href="index.html" class="nav-link  pe-3 sa">Anasayfa</a>
+              </li>
+              <li class="nav-item">
+                <a href="hakkımızda.html" class="nav-link pe-3 sa ">Hakkımızda</a>
               </li>
               <li class="nav-item">
                 <a href="hizmetlerimiz.html" class="nav-link pe-3 text-white">Hizmetlerimiz</a>
@@ -105,11 +112,9 @@
               <li class="nav-item">
                 <a href="yaptıklarımız.html" class="nav-link pe-3 sa">Yaptıklarımız</a>
               </li>
-              
               <li class="nav-item">
-                <a href="#" class="nav-link pe-3 sa">İletişim</a>
+                <a href="iletişim.html" class="nav-link pe-3 sa">İletişim</a>
               </li>
-
             </ul>
         </div>
     </div>
