@@ -13,6 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
     
     <script src="https://unpkg.com/scrollreveal"></script>
     
@@ -100,6 +103,9 @@
       .font{
         font-family: 'Sofia Sans', sans-serif;
       }
+      .font-p{
+        font-family: 'Josefin Sans', sans-serif;
+      }
     </style>
 
     
@@ -107,9 +113,8 @@
     <link href="carousel.css" rel="stylesheet">
   </head>
   <body class="m-0 p-0">
-    
     <nav class="navbar  navbar-dark fixed-top bg-dark navbar-expand-lg text-white ">
-      <div class="container scale nav ps-5">
+      <div class="container scale  ps-5">
         <div style="height: 70px;">
           <a href="#" class="navbar-brand d-flex mt-2 ">iz<h1><div class="d-flex">
               <p style="color: aqua;">c</p><p style="color: yellow;">o</p><p style="color: red;">l</p><p style="color: greenyellow;">o</p><p style="color: orange;">r</p>
@@ -143,52 +148,51 @@
 
 <main>
 
-  <div id="myCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <div class="row">
+    <div id="myCarousel" class="carousel slide carousel-fade mt-4" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active ">
+          <img src="dist/img/WhatsApp Image 2023-01-14 at 23.35.11 (1).jpeg" class="img-fluid " alt="Resim" width="100%" >
+          <div class="container">
+            <div class="carousel-caption ">
+              <p class="font-p shadow rounded-5 fs-4 lh-sm colors">Seçkin ithal markaların geniş renk ve desen seçenekleri ile sizleri buluşturuyoruz. </p>
+              <p><a class="btn btn-lg btn-primary" href="#">Daha Fazlası</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <img src="dist/img/WhatsApp Image 2023-01-14 at 23.35.11 (2).jpeg" class="img-fluid " alt="Resim" width="100%"  >
+          <div class="container">
+            <div class="carousel-caption">
+              <p class="font-p shadow rounded-5 fs-3 lh-sm">Hayalinizdeki evi gerçeğe dönüştürelim.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Daha Fazlası</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="dist/img/WhatsApp Image 2023-01-14 at 23.35.10 (2).jpeg" class="img-fluid" alt="Resim" width="100%" >
+          <div class="container">
+            <div class="carousel-caption ">
+              <p class="font-p shadow rounded-5 fs-3 lh-sm">ev içi seramik modelleri, dekorasyonun vazgeçilmez birer tamamlayıcısıdır.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Daha Fazlası</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden ">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active ">
-        <img src="dist/img/WhatsApp Image 2023-01-14 at 23.35.11 (1).jpeg" class="img-fluid " alt="Resim" width="100%" >
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <h1>Heykeller</h1>
-            <p>Zanatkar ustalarımız tarafından yapılanlar.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Daha Fazlası</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item ">
-        <img src="dist/img/WhatsApp Image 2023-01-14 at 23.35.14 (1).jpeg" class="img-fluid " alt="Resim" width="100%"  >
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Duvar kaplama</h1>
-            <p>Tercih ettiğiniz kaplamaları profesyonellere bırakın.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Daha Fazlası</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="dist/img/WhatsApp Image 2023-01-14 at 23.35.24 (2).jpeg" class="img-fluid" alt="Resim" width="100%" >
-        <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>Duvar Boyama</h1>
-            <p>Seçtiğiniz renkleri ve desenleri sanatsal bir şekilde birleştiririz.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Daha Fazlası</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
 
 
@@ -204,8 +208,8 @@
 
     <div class="row featurette ">
       <div class="col-md-7 left">
-        <h2 class="featurette-heading fw-normal lh-2">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+        <h2 class="featurette-heading fw-normal font-p lh-2">Müşteri Memnuniyeti <span class="text-muted"></span></h2>
+        <p class="lead font-p fs-4 mt-4">Hedefimiz maximum müşteri memnuniyetine ulaşmaktır.  Memnun Müşterilerimiz Sayesinde Markamızı Her Geçen Gün Daha Çok Büyütüyoruz.</p>
       </div>
       <div class="col-md-5 d-flex justify-content-center align-items-center gy-5 right">
         <div class="">
@@ -218,8 +222,8 @@
 
     <div class="row featurette ">
       <div class="col-md-7 order-md-2 gx-5 right">
-        <h2 class="featurette-heading fw-normal lh-1 text-end">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead text-end">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+        <h2 class="featurette-heading fw-normal font-p lh-1 text-end">Kısa Sürede Teslimat <span class="text-muted"></span></h2>
+        <p class="lead text-end font-p fs-4 mt-4">Her detaya hakim sektörün en iyileri ustalarımızla ekonomik fiyatlandırma ile uzman kadromuz ve kaliteli ürünlerimiz ile hayallerinizi gerçek kılıyoruz.</p>
       </div>
       <div class="col-md-5 order-md-1 d-flex justify-content-center align-items-center gy-5 left">
         <video src="dist/img/WhatsApp Video 2023-01-14 at 23.35.13.mp4" class=" object-fit-fill shadow rounded-4 "  controls style="width: 300px; height: 400px; "></video>
@@ -290,9 +294,10 @@
     <script src="/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-      ScrollReveal().reveal('.right',{ duration: 2000 ,distance:"60px",origin:"right"});
-      ScrollReveal().reveal('.left',{ duration: 2000 ,distance:"60px",origin:"left"});
-      ScrollReveal().reveal('.nav',{ duration: 2000 ,distance:"-20px",origin: "bottom", desktop: false ,reset: false});
+      ScrollReveal().reveal('.right',{ duration: 2000 ,distance:"30px",origin:"right"});
+      ScrollReveal().reveal('.left',{ duration: 2000 ,distance:"30px",origin:"left"});
+      
+      ScrollReveal().reveal('.nav',{ duration: 2000 ,distance:"-20px",origin: "bottom", desktop: false ,reset: false });
     </script>
   </body>
 </html>
