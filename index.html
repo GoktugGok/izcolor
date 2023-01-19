@@ -116,7 +116,7 @@
     <nav class="navbar  navbar-dark fixed-top bg-dark navbar-expand-lg text-white ">
       <div class="container scale  ps-5">
         <div style="height: 70px;">
-          <a href="#" class="navbar-brand d-flex mt-2 ">iz<h1><div class="d-flex">
+          <a href="index.html" onclick="reloadPage()" class="navbar-brand d-flex mt-2 ">iz<h1><div class="d-flex">
               <p style="color: aqua;">c</p><p style="color: yellow;">o</p><p style="color: red;">l</p><p style="color: greenyellow;">o</p><p style="color: orange;">r</p>
                </div></h1><p class="d-flex justify-content-center align-items-center">art</p>
           </a>
@@ -161,7 +161,7 @@
           <div class="container">
             <div class="carousel-caption ">
               <p class="font-p shadow rounded-5 fs-4 lh-sm colors">Seçkin ithal markaların geniş renk ve desen seçenekleri ile sizleri buluşturuyoruz. </p>
-              <p><a class="btn btn-lg btn-primary" href="#">Daha Fazlası</a></p>
+              <p><a class="btn btn-lg btn-primary" href="yaptıklarımız.html#iç-boyama">Daha Fazlası</a></p>
             </div>
           </div>
         </div>
@@ -170,7 +170,7 @@
           <div class="container">
             <div class="carousel-caption">
               <p class="font-p shadow rounded-5 fs-3 lh-sm">Hayalinizdeki evi gerçeğe dönüştürelim.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Daha Fazlası</a></p>
+              <p><a class="btn btn-lg btn-primary" href="yaptıklarımız.html#iç-boyama">Daha Fazlası</a></p>
             </div>
           </div>
         </div>
@@ -179,7 +179,7 @@
           <div class="container">
             <div class="carousel-caption ">
               <p class="font-p shadow rounded-5 fs-3 lh-sm">ev içi seramik modelleri, dekorasyonun vazgeçilmez birer tamamlayıcısıdır.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Daha Fazlası</a></p>
+              <p><a class="btn btn-lg btn-primary" href="yaptıklarımız.html#iç-boyama">Daha Fazlası</a></p>
             </div>
           </div>
         </div>
@@ -294,10 +294,14 @@
     <script src="/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-      ScrollReveal().reveal('.right',{ duration: 2000 ,distance:"30px",origin:"right"});
-      ScrollReveal().reveal('.left',{ duration: 2000 ,distance:"30px",origin:"left"});
-      
+      ScrollReveal().reveal('.right',{ duration: 2000 ,distance:"20px",origin:"right"});
+      ScrollReveal().reveal('.left',{ duration: 2000 ,distance:"20px",origin:"left"});
       ScrollReveal().reveal('.nav',{ duration: 2000 ,distance:"-20px",origin: "bottom", desktop: false ,reset: false });
+
+      function reloadPage()
+      {
+        window.location.reload()
+      }
     </script>
   </body>
 </html>

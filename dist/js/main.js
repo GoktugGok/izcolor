@@ -6,4 +6,4 @@ mediumZoom('.zoom',{
 
 ScrollReveal().reveal('.right',{ duration: 2000 ,distance:"60px",origin:"right"});
 ScrollReveal().reveal('.left',{ duration: 2000 ,distance:"60px",origin:"left"});
-ScrollReveal().reveal('.top',{ duration: 2000 ,distance:"-50px",origin: "top",interval:500 });
+ScrollReveal().reveal('.top',{ duration: 2000 ,distance:"-50px",origin: "top",interval: 200 });
