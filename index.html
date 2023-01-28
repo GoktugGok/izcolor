@@ -24,6 +24,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
     
     <script src="https://unpkg.com/scrollreveal"></script>
     
@@ -118,6 +122,7 @@
         font-family: 'Unbounded', cursive;
         border: 1px solid white;
         color: white;
+        font-size: 18px;
         background-color: blue;
       }
       .daha-fazla:hover{
@@ -125,6 +130,10 @@
         border: 1px solid white;
         color: white;
         background-color: blue;
+      }
+      .yazısı{
+        font-family: 'Kanit', sans-serif;
+        
       }
     </style>
 
@@ -175,13 +184,13 @@
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-      <div class="carousel-inner" style="height: 600px;">
-        <div class="carousel-item active ">
+      <div class="carousel-inner" >
+        <div class="carousel-item active">
           <img src="dist/img/WhatsApp Image 2023-01-14 at 23.35.11 (1).jpeg" class="img-fluid" alt="Resim" width="100%"  >
-          <div class="container ">
-            <div class="carousel-caption nav d-flex justify-content-center align-items-center ">
-              <p class="font-p shadow rounded-5 fs-4 lh-sm colors p-2 ">Seçkin ithal markaların geniş renk ve desen seçenekleri ile sizleri buluşturuyoruz. </p>
-              <p class=" "><a class="btn btn-lg  daha-fazla" href="yaptıklarımız.html#iç-boyama">Daha Fazlası</a></p>
+          <div class="container">
+            <div class="carousel-caption">
+              <p class="rounded-5 fs-4 lh-sm  p-2  yazısı left"  style="text-shadow: 2px 2px black; ">Seçkin ithal markaların geniş renk ve desen seçenekleri ile sizleri buluşturuyoruz. </p>
+              <p class=" "><a class="btn btn-lg  daha-fazla right" href="yaptıklarımız.html#iç-boyama">Daha Fazlası</a></p>
             </div>
           </div>
         </div>
@@ -314,8 +323,8 @@
     <script src="/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-      ScrollReveal().reveal('.right',{ duration: 2000 ,distance:"20px",origin:"right"});
-      ScrollReveal().reveal('.left',{ duration: 2000 ,distance:"20px",origin:"left"});
+      ScrollReveal().reveal('.right',{ duration: 2000 ,delay:500,distance:"10px",origin:"right"});
+      ScrollReveal().reveal('.left',{ duration: 2000 ,delay:300,distance:"10px",origin:"left"});
       ScrollReveal().reveal('.nav',{ duration: 2000 ,distance:"-20px",origin: "bottom"});
 
       function reloadPage()
