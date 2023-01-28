@@ -16,6 +16,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
     
     <script src="https://unpkg.com/scrollreveal"></script>
     
@@ -106,6 +114,18 @@
       .font-p{
         font-family: 'Josefin Sans', sans-serif;
       }
+      .daha-fazla{
+        font-family: 'Unbounded', cursive;
+        border: 1px solid white;
+        color: white;
+        background-color: blue;
+      }
+      .daha-fazla:hover{
+        font-family: 'Unbounded', cursive;
+        border: 1px solid white;
+        color: white;
+        background-color: blue;
+      }
     </style>
 
     
@@ -116,8 +136,8 @@
     <nav class="navbar  navbar-dark fixed-top bg-dark navbar-expand-lg text-white ">
       <div class="container scale  ps-5">
         <div style="height: 70px;">
-          <a href="index.html" onclick="reloadPage()" class="navbar-brand d-flex mt-2 ">iz<h1><div class="d-flex">
-              <p style="color: aqua;">c</p><p style="color: yellow;">o</p><p style="color: red;">l</p><p style="color: greenyellow;">o</p><p style="color: orange;">r</p>
+          <a href="index.html" onclick="reloadPage()" class="navbar-brand d-flex mt-2 ">İz<h1><div class="d-flex">
+              <p style="color: aqua;">C</p><p style="color: yellow;">o</p><p style="color: red;">L</p><p style="color: greenyellow;">o</p><p style="color: orange;">R</p>
                </div></h1><p class="d-flex justify-content-center align-items-center">art</p>
           </a>
       </div>
@@ -155,13 +175,13 @@
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-      <div class="carousel-inner">
+      <div class="carousel-inner" style="height: 600px;">
         <div class="carousel-item active ">
-          <img src="dist/img/WhatsApp Image 2023-01-14 at 23.35.11 (1).jpeg" class="img-fluid " alt="Resim" width="100%" >
-          <div class="container">
-            <div class="carousel-caption ">
-              <p class="font-p shadow rounded-5 fs-4 lh-sm colors">Seçkin ithal markaların geniş renk ve desen seçenekleri ile sizleri buluşturuyoruz. </p>
-              <p><a class="btn btn-lg btn-primary" href="yaptıklarımız.html#iç-boyama">Daha Fazlası</a></p>
+          <img src="dist/img/WhatsApp Image 2023-01-14 at 23.35.11 (1).jpeg" class="img-fluid" alt="Resim" width="100%"  >
+          <div class="container ">
+            <div class="carousel-caption nav d-flex justify-content-center align-items-center ">
+              <p class="font-p shadow rounded-5 fs-4 lh-sm colors p-2 ">Seçkin ithal markaların geniş renk ve desen seçenekleri ile sizleri buluşturuyoruz. </p>
+              <p class=" "><a class="btn btn-lg  daha-fazla" href="yaptıklarımız.html#iç-boyama">Daha Fazlası</a></p>
             </div>
           </div>
         </div>
@@ -206,12 +226,12 @@
 
     <hr class="featurette-divider">
 
-    <div class="row featurette ">
-      <div class="col-md-7 left">
-        <h2 class="featurette-heading fw-normal font-p lh-2">Müşteri Memnuniyeti <span class="text-muted"></span></h2>
+    <div class="row featurette">
+      <div class="col-md-6 left">
+        <h2 class="featurette-heading ms-0   fw-normal font-p lh-2">Müşteri Memnuniyeti </h2>
         <p class="lead font-p fs-4 mt-4">Hedefimiz maximum müşteri memnuniyetine ulaşmaktır.  Memnun Müşterilerimiz Sayesinde Markamızı Her Geçen Gün Daha Çok Büyütüyoruz.</p>
       </div>
-      <div class="col-md-5 d-flex justify-content-center align-items-center gy-5 right">
+      <div class="col-md-6 d-flex justify-content-center align-items-center gy-5 right">
         <div class="">
           <video src="dist/img/WhatsApp Video 2023-01-14 at 23.35.20 (1).mp4"  class=" object-fit-fill shadow rounded-4 " controls style="width: 300px; height: 400px;"></video>
         </div>
@@ -222,7 +242,7 @@
 
     <div class="row featurette ">
       <div class="col-md-7 order-md-2 gx-5 right">
-        <h2 class="featurette-heading fw-normal font-p lh-1 text-end">Kısa Sürede Teslimat <span class="text-muted"></span></h2>
+        <h2 class="featurette-heading fw-normal font-p lh-1 text-end">Kısa Sürede Teslimat </h2>
         <p class="lead text-end font-p fs-4 mt-4">Her detaya hakim sektörün en iyileri ustalarımızla ekonomik fiyatlandırma ile uzman kadromuz ve kaliteli ürünlerimiz ile hayallerinizi gerçek kılıyoruz.</p>
       </div>
       <div class="col-md-5 order-md-1 d-flex justify-content-center align-items-center gy-5 left">
@@ -296,7 +316,7 @@
     <script>
       ScrollReveal().reveal('.right',{ duration: 2000 ,distance:"20px",origin:"right"});
       ScrollReveal().reveal('.left',{ duration: 2000 ,distance:"20px",origin:"left"});
-      ScrollReveal().reveal('.nav',{ duration: 2000 ,distance:"-20px",origin: "bottom", desktop: false ,reset: false });
+      ScrollReveal().reveal('.nav',{ duration: 2000 ,distance:"-20px",origin: "bottom"});
 
       function reloadPage()
       {
