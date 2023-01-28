@@ -9,11 +9,15 @@
     <title>Carousel Template · Bootstrap v5.3</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
-
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
+
 <link href="/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
@@ -79,11 +83,14 @@
       .shadows{
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
       }
+      .başlık{
+        font-family: 'Noto Serif', serif;
+      }
     </style>
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
   </head>
-  <body class="arka-plan"  >
+  <body class="arka-plan">
     <nav class="navbar  navbar-dark fixed-top bg-dark navbar-expand-lg text-white ">
       <div class="container scale nav ps-5">
         <div style="height: 70px;">
@@ -98,7 +105,7 @@
         <div class="collapse navbar-collapse font" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a href="index.html" class="nav-link  pe-3 sa">Anasayfa</a>
+                <a href="index.html" class="nav-link  pe-3 sa ">Anasayfa</a>
               </li>
               <li class="nav-item">
                 <a href="hakkımızda.html" class="nav-link pe-3 sa ">Hakkımızda</a>
@@ -118,23 +125,27 @@
     </nav>
 
       <main>
-        <div class="container marketing " style="margin-top: 80px;">
-          <div class="row">
-            <div class="col-lg-4 ">
-              <a href="yaptıklarımız.html#iç-boyama" class="shadows">
+        <div class="container marketing " style="margin-top: 80px; ">
+          <div class="row ">
+            <div class="col-lg-4 col-md-6 location">
+              <a href="yaptıklarımız.html#iç-boyama" class="shadows ">
                   <img src="dist/img/WhatsApp Image 2023-01-14 at 23.35.11 (2).jpeg" width="300" height="250" alt="" class="mt-5 shadows rounded-3">
-                  <p><a class="btn btn-secondary mt-3 shadows" href="yaptıklarımız.html#iç-boyama">İç Cephe Boyama &raquo;</a></p>
+                  <p><a class="btn mt-3 başlık shadows" href="yaptıklarımız.html#iç-boyama">Mermer Doku boya &raquo;</a></p>
               </a>
             </div>
-            <div class="col-lg-4 ">
-              <a href="yaptıklarımız.html#seramik-kaplama" class="shadows">
+            <div class="col-lg-4 col-md-6 location">
+              <a href="yaptıklarımız.html#seramik-kaplama " class="shadows">
               <img src="dist/img/WhatsApp Image 2023-01-14 at 23.35.13.jpeg" width="300" height="250" alt="" class="mt-5 shadows rounded-3">
-              <p><a class="btn btn-secondary mt-3 shadows" href="yaptıklarımız.html#seramik-kaplama">Seramik Kaplama &raquo;</a></p>
+              <p><a class="btn mt-3  başlık shadows" href="yaptıklarımız.html#seramik-kaplama">Treverten Doku &raquo;</a></p>
               </a>
             </div>
-            <div class="col-lg-4 ">
+            <div class="col-lg-4 col-md-6 location">
               <img src="dist/img/WhatsApp Image 2023-01-14 at 23.35.15 (1).jpeg" width="300" height="250" alt="" class="mt-5 shadows rounded-3">
-              <p><a class="btn btn-secondary mt-3 shadows" href="yaptıklarımız.html#duvar-kaplama">Duvar Kaplama &raquo;</a></p>
+              <p><a class="btn mt-3 başlık shadows" href="yaptıklarımız.html#duvar-kaplama">Beton Doku &raquo;</a></p>
+            </div>
+            <div class="col-lg-4 col-md-6 location">
+              <img src="dist/img/WhatsApp Image 2023-01-14 at 23.35.15 (1).jpeg" width="300" height="250" alt="" class="mt-5 shadows rounded-3">
+              <p><a class="btn mt-3 başlık shadows" href="yaptıklarımız.html#Kadife-Dokulu-boya">Kadife Dokulu boya &raquo;</a></p>
             </div>
           </div>
         </div>
@@ -142,5 +153,21 @@
     <script src="/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/dist/js/medium-zoom.min.js"></script>
     <script src="/dist/js/main.js"></script>
+    <script src="/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      ScrollReveal().reveal('.right',{ duration: 2000 ,distance:"60px",origin:"right"});
+      ScrollReveal().reveal('.left',{ duration: 2000 ,distance:"60px",origin:"left"});
+      ScrollReveal().reveal('.location',{ duration: 3000 ,distance:"20px", scale: 0.6,interval: 400});
+      ScrollReveal().reveal('.nav',{ duration: 2000 ,distance:"-20px",origin: "bottom", desktop: false ,reset: false});
+
+      window.addEventListener("load",function(){
+        let load_screen = document.getElementById("load_screen");
+        document.body.removeChild(load_screen);
+      })
+    </script>
+    <script>
+      
+  </script>
   </body>
 </html>

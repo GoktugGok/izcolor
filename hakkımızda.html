@@ -7,7 +7,7 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.108.0">
     <title>Carousel Template · Bootstrap v5.3</title>
-
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -147,15 +147,15 @@
 
     <main class="">
         <div class="row mt-5 pt-1 p-0 m-0">
-                <div class="col-md-12 text-center mt-4 mb-3">
-                    <h1 class=" title-font">Hakkımızda</h1></div>
+                <div class="col-md-12 text-center mt-4 mb-3 right">
+                    <h1 class=" title-font text-white"style="text-shadow: 2px 2px black; ">Hakkımızda</h1></div>
                 <div class="col-md-1 col-sm-2"></div>
-                <div class="col-md-10 col-sm-8 shadow p-3 mb-5 rounded border rounded-4">
+                <div class="col-md-10 col-sm-8 shadow p-3 mb-5 rounded border rounded-4 nav">
                     <div class="text-dark ms-2 p-2 fs-4 ordered fst-italic font ">
-                        <h3>
+                        <h3 class="text-dark">
                           İşletmemiz dünden bugüne dürüstlük ilkesini benimseyerek, dengeli ve sağlıklı bir biçimde gelişen şirketimiz, müşterilerinin gösterdikleri yakın ilgi ve itimat sayesinde bu günkü onur verici konumuna ulaşmıştır.
 
-                         Yılında kurumsal hale gelip sahip olduğu profesyonel yapısı ve kalite anlayışıyla İtalyan boya ve dekorasyon hizmeti vermektedir.
+                        1993 Yılında kurumsal hale gelip sahip olduğu profesyonel yapısı ve kalite anlayışıyla İtalyan boya ve dekorasyon hizmeti vermektedir.
                        
                        Dekorasyon aynı zamanda görselleştirme ve geliştirmeye önem vererek sizlere daima en güncel trendleri ve modern alternatifleri sunmaktadır.
                        
@@ -173,7 +173,7 @@
     <script>
       ScrollReveal().reveal('.right',{ duration: 2000 ,distance:"60px",origin:"right"});
       ScrollReveal().reveal('.left',{ duration: 2000 ,distance:"60px",origin:"left"});
-      ScrollReveal().reveal('.nav',{ duration: 2000 ,distance:"-20px",origin: "bottom", desktop: false ,reset: false});
+      ScrollReveal().reveal('.nav',{ duration: 2000 ,delay:600,distance:"-20px",origin: "bottom"});
     </script>
   </body>
 </html>
