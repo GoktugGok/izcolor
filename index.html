@@ -141,6 +141,31 @@
       .açıklama{
         font-family: 'Noto Serif', serif;
       }
+      .kusak-buton { 
+        width:100%;
+        height:100px;
+        border: none;
+        background-image: linear-gradient(90deg,
+        #fdcb6e 0%,
+        #a29bfe 20%,
+        #0984e3 40%, 
+        #e84393 60%, 
+        #d63031 80%, 
+        #ffeaa7 100%);
+        
+      }
+
+
+      .kusak-buton{
+        animation:renklgecisi 10s linear infinite;
+      }
+
+
+      @keyframes renklgecisi {
+        to {
+          background-position:100vw;
+        }
+      }
     </style>
 
     
@@ -182,16 +207,18 @@
 
 <main>
 
-  <div class="row " style="margin-top: 60px;">
+  <div class="row bg-dark" style="margin-top: 60px;">
+
+    
     <div id="myCarousel" class="carousel slide carousel-fade mt-4" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-      <div class="carousel-inner" style="height: 85vh;"  >
-        <div class="carousel-item active"  style="height: 75vh;">
-          <img src="dist/img/WhatsApp Image 2023-01-14 at 23.35.11 (1).jpeg" class="img-fluid" alt="Resim" width="100%"   >
+      <div class="carousel-inner" style="height: 77vh;">
+        <div class="carousel-item active"  style="height: 80vh;">
+          <img src="dist/img/WhatsApp Image 2023-01-14 at 23.35.11 (1).jpeg" class="img-fluid" alt="Resim" height="100%" width="100%">
           <div class="container">
             <div class="carousel-caption">         
               <h1 class="rounded-5  p-2  yazısı  text-center nav-s"  style="text-shadow: 2px 2px black;">Seçkin ithal markaların geniş renk ve desen seçenekleri ile sizleri buluşturuyoruz. </h1>
@@ -199,8 +226,8 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item " style="height: 75vh;">
-          <img src="dist/img/WhatsApp Image 2023-01-14 at 23.35.11 (2).jpeg" class="img-fluid " alt="Resim" width="100%"  >
+        <div class="carousel-item " style="height: 80vh;">
+          <img src="dist/img/WhatsApp Image 2023-01-14 at 23.35.11 (2).jpeg" class="img-fluid" alt="Resim" height="120%" width="100%"  >
           <div class="container">
             <div class="carousel-caption ">
               <h1 class="rounded-5  p-2  yazısı  text-center " style="text-shadow: 2px 2px black; ">Hayalinizdeki evi gerçeğe dönüştürelim.</h1>
@@ -208,11 +235,11 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item" style="height: 75vh;">
-          <img src="dist/img/WhatsApp Image 2023-01-14 at 23.35.10 (2).jpeg" class="img-fluid" alt="Resim" width="100%" >
+        <div class="carousel-item" style="height: 80vh;">
+          <img src="dist/img/WhatsApp Image 2023-01-14 at 23.35.10 (2).jpeg" class="img-fluid" alt="Resim" height="120%" width="100%">
           <div class="container">
             <div class="carousel-caption ">
-              <h1 class="frounded-5  p-2  yazısı  text-center " style="text-shadow: 2px 2px black; ">ev içi seramik modelleri, dekorasyonun vazgeçilmez birer tamamlayıcısıdır.</h1>
+              <h1 class="rounded-5  p-2  yazısı  text-center " style="text-shadow: 2px 2px black; ">ev içi seramik modelleri, dekorasyonun vazgeçilmez birer tamamlayıcısıdır.</h1>
               <p class=" mt-5 "><a class="btn btn-lg  daha-fazla" href="yaptıklarımız.html#iç-boyama">Daha Fazlası</a></p>
             </div>
           </div>
@@ -226,14 +253,13 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
+
     </div>
+    <button href="http://kodlayazilim.com/web/css-ile-animasyonlu-gokkusagi-butonu-yapimi/" class="kusak-buton shadow "></button> 
   </div>
 
 
-  <div class="container ">
-
-    
-
+  <div class="container mt-5">
     <div class="row featurette">
       <div class="col-md-6 right">
         <h2 class="featurette-heading ms-0  fw-normal font-p lh-1 d-flex " style="text-shadow: 1px 2px black; ">Müşteri Memnuniyeti </h2>
@@ -260,7 +286,7 @@
 
     <hr class="featurette-divider">
 
-    <div class="row featurette border  border-dark p-5 pt-2 rounded-4 " style="background: linear-gradient(to right, rgb(255, 228, 230), rgb(204, 251, 241));">
+    <div class="row featurette border  border-dark p-5 pt-2 rounded-4 " style="background-image: linear-gradient(90deg,#fdcb6e 0%,#a29bfe 20%,#0984e3 40%, #e84393 60%, #d63031 80%, #ffeaa7 100%);">
       <div class="col-lg-4 col-md-6 d-flex justify-content-center align-items-center gy-5 bottom ">
         <video src="dist/img/WhatsApp Video 2023-01-14 at 23.35.06.mp4" class=" object-fit-fill border-primary border-5  rounded-4 "  controls style="width:  300px; height: 400px; "></video>
       </div>
@@ -273,15 +299,11 @@
 
     </div>
 
-    <hr class="featurette-divider mb-3 mt-5">
+    <hr class="featurette-divider ">
+    
 
-    <!-- /END THE FEATURETTES -->
-
-  </div><!-- /.container -->
-
-
-  <!-- FOOTER -->
-
+  </div>
+  
   <footer class="container ">
     <div class="row bg-dark py-4 row-gap-3 rounded-top-4">
       <div class="col-sm-6 text-dark d-flex justify-content-center align-items-center ">
